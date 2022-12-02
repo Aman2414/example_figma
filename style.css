@@ -340,6 +340,24 @@ nav ul li a {
   color: var(--primary-color);
 }
 
+.footer-section .section-2 input {
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  background-color: white;
+  border-color: transparent;
+  width: 50%;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px 7%;
+  padding: 10px;
+}
+
+.footer-section .section-2 input::placeholder {
+  color: var(--primary-color);
+  font-weight: 400;
+  font-size: 15px;
+  padding-left: 10px;
+}
+
 .footer-section .section-2 .link-section {
   display: flex;
   /* background-color: cyan; */
