@@ -19,3 +19,5 @@ $(window).resize(function () {
 // if ($(window).width() > 1092) {
 //   alert("Window width" + $(window).width());
 // }
+
+alert("Hello World");
