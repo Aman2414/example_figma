@@ -536,8 +536,6 @@ nav .container {
     left: 26%;
     color: var(--primary-color);
   }
-
-  /* Footer */
 }
 
 @media only screen and (max-width: 1092px) {
@@ -574,7 +572,7 @@ nav .container {
   /* Grid Wrapper */
   .grid-wrapper {
     width: 600px;
-    gap: 10px;
+    gap: 15px;
   }
 
   /* Fashion Section */
@@ -583,7 +581,7 @@ nav .container {
   }
 
   .fashion-section .cards {
-    gap: 0rem;
+    gap: 0px;
   }
 
   .fashion-section .card {
@@ -593,13 +591,13 @@ nav .container {
   /* Style Section */
 
   .style-section {
-    width: 600px;
+    width: 60%;
     margin: 0 auto;
   }
 
   .style-section .style-grid {
     margin-top: 5rem;
-    gap: 15px;
+    gap: 0px;
     display: flex;
     position: relative;
     left: 100px;
@@ -607,14 +605,25 @@ nav .container {
 
   .style-grid .first {
     margin-top: 33px;
+    background-color: white;
+    height: 100%;
+    position: relative;
+    left: -80px;
+  }
+
+  .style-grid .second {
+    position: relative;
+    left: -60px;
+    height: 100%;
   }
 
   .style-grid .third {
-    padding: 10px;
+    padding: 15px;
+    z-index: 1;
     position: relative;
     top: 160px;
-    right: 130px;
     height: 100%;
+    right: 150px;
     background-color: white;
   }
 
@@ -648,5 +657,205 @@ nav .container {
 
   .footer-section .section-2 input[type="text"] {
     width: 300px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  /* Style Section */
+  .style-section {
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  /* Footer */
+  .footer-section .section-2 .button-inside {
+    width: 270px;
+  }
+
+  .footer-section .section-2 input[type="text"] {
+    width: 200px;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 800px) {
+  /*CATAGORY SECTION  */
+  .grid-wrapper {
+    width: 80%;
+    grid-gap: 5px;
+  }
+
+  /* Fashion Section */
+  .fashion-section {
+    width: 500px;
+  }
+
+  .fashion-section .cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 0px;
+  }
+
+  .fashion-section .cards {
+    gap: 0px;
+  }
+
+  .fashion-section .card {
+    margin-top: 3rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .banner-area button {
+    font-weight: 500;
+    font-size: 14px;
+  }
+
+  .banner-content {
+    position: absolute;
+    top: 40%;
+    left: 15%;
+    color: var(--primary-color);
+  }
+
+  .banner-content .small-text {
+    font-weight: 500;
+    font-size: 16px;
+  }
+
+  .banner-content .large-text {
+    font-weight: 700;
+    font-size: 50px;
+  }
+
+  .grid-wrapper {
+    width: 60%;
+    grid-gap: 5px;
+  }
+
+  .fashion-section {
+    width: 50%;
+  }
+
+  .fashion-section .cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 0px;
+  }
+
+  /* Banner 2  */
+
+  .banner-2-area button {
+    font-weight: 500;
+    font-size: 14px;
+  }
+
+  .banner-2-content {
+    position: absolute;
+    top: 65%;
+    left: 12%;
+    color: var(--primary-color);
+  }
+
+  .banner-2-content .small-text {
+    font-weight: 500;
+    font-size: 16px;
+  }
+
+  .banner-2-content .large-text {
+    font-weight: 700;
+    font-size: 50px;
+  }
+
+  /* Footer Section */
+
+  .footer-section .footer-content {
+    display: flex;
+    flex-direction: column;
+    top: 0%;
+    left: 0%;
+    padding-bottom: 100px;
+  }
+
+  .footer-section .section-1 {
+    width: 100%;
+    position: relative;
+    margin-top: 6rem;
+    padding: 0 12%;
+  }
+
+  .footer-section .section-2 {
+    position: relative;
+    margin-top: 6rem;
+    width: 100%;
+    padding: 0 12%;
+
+    /* background-color: blueviolet; */
+  }
+
+  .footer-section .section-2 .button-inside {
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    background-color: white;
+    width: 75%;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 7%;
+  }
+
+  .footer-section .section-2 input[type="text"] {
+    background-color: transparent;
+    position: relative;
+    margin-left: 10px;
+    top: -3px;
+    border: none;
+    width: 80%;
+    font-size: 15px;
+  }
+
+  .footer-section .section-2 input[type="submit"] {
+    position: relative;
+    top: -3px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-weight: 600;
+    font-size: 15px;
+  }
+
+  .footer-section .section-2 input::placeholder {
+    color: var(--primary-color);
+    font-weight: 400;
+    font-size: 15px;
+    padding-left: 10px;
+  }
+
+  .footer-section .section-2 input:focus {
+    outline: none;
+  }
+
+  .footer-section .section-2 .link-section {
+    display: flex;
+    /* background-color: cyan; */
+    justify-content: space-between;
+    margin-top: 1rem;
+    width: 100%;
+  }
+
+  .footer-section .section-2 .link-section .main-title {
+    font-weight: 600;
+    font-size: 20px;
+  }
+
+  .footer-section .section-2 .link-section .sub1-link-section {
+    width: 100%;
+    /* background-color: red; */
+    margin-right: 10px;
+  }
+
+  .footer-section .section-2 .link-section .sub2-link-section > div {
+    margin-top: 1rem;
   }
 }
