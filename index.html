@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -28,7 +29,7 @@
     <nav>
       <div class="logo">YOUR LOGO</div>
       <div class="nav-links">
-        <ul>
+        <ul class="nav-links-ul">
           <li><a href="">HOME</a></li>
           <li><a href="">SHOP</a></li>
           <li><a href="">LOOKBOOK</a></li>
@@ -42,6 +43,12 @@
         <i class="fa-solid fa-magnifying-glass"></i>
         <i class="fa-regular fa-heart"></i>
         <i class="fa-solid fa-cart-shopping"></i>
+      </div>
+
+      <div class="container">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
       </div>
     </nav>
 
@@ -96,7 +103,7 @@
       </div>
 
       <div class="cards">
-        <div class="card-1">
+        <div class="card">
           <img src="images/8.png" alt="" />
           <div class="light-text">IGURE</div>
           <div class="bold-text">GREEN MUSCLE FIT POLO SHIRT</div>
@@ -106,7 +113,7 @@
           </div>
         </div>
 
-        <div class="card-2">
+        <div class="card">
           <img src="images/9.png" alt="" />
           <div class="light-text">IGURE</div>
           <div class="bold-text">GREEN MUSCLE FIT POLO SHIRT</div>
@@ -116,7 +123,7 @@
           </div>
         </div>
 
-        <div class="card-3">
+        <div class="card">
           <img src="images/6.png" alt="" />
           <div class="light-text">IGURE</div>
           <div class="bold-text">GREEN MUSCLE FIT POLO SHIRT</div>
@@ -126,7 +133,7 @@
           </div>
         </div>
 
-        <div class="card-4">
+        <div class="card">
           <img src="images/7.png" alt="" />
           <div class="light-text">IGURE</div>
           <div class="bold-text">GREEN MUSCLE FIT POLO SHIRT</div>
@@ -152,7 +159,7 @@
       </div>
 
       <div class="cards">
-        <div class="card-1">
+        <div class="card">
           <img src="images/13.png" alt="" />
           <div class="light-text">IGURE</div>
           <div class="bold-text">GREEN MUSCLE FIT POLO SHIRT</div>
@@ -163,7 +170,7 @@
           </div>
         </div>
 
-        <div class="card-2">
+        <div class="card">
           <img src="images/11.png" alt="" />
           <div class="light-text">IGURE</div>
           <div class="bold-text">GREEN MUSCLE FIT POLO SHIRT</div>
@@ -173,7 +180,7 @@
           </div>
         </div>
 
-        <div class="card-3">
+        <div class="card">
           <img src="images/10.png" alt="" />
           <div class="light-text">IGURE</div>
           <div class="bold-text">GREEN MUSCLE FIT POLO SHIRT</div>
@@ -184,7 +191,7 @@
           </div>
         </div>
 
-        <div class="card-4">
+        <div class="card">
           <img src="images/12.png" alt="" />
           <div class="light-text">IGURE</div>
           <div class="bold-text">GREEN MUSCLE FIT POLO SHIRT</div>
@@ -256,7 +263,7 @@
 
           <div class="phone">01647470457</div>
 
-          <div class="brands">
+          <div class="social-media">
             <i class="fa-brands fa-facebook"></i>
             <i class="fa-brands fa-instagram"></i>
             <i class="fa-brands fa-twitter"></i>
@@ -267,7 +274,11 @@
         <div class="section-2">
           <div class="email-updates">
             <div>RECIVE EMAIL UPDATES</div>
-            <input placeholder="YOUR EMAIL ADDRESS" type="email" id="email" />
+
+            <div class="button-inside">
+              <input placeholder="Your Email Address" type="text" id="email" />
+              <input type="submit" value="JOIN" />
+            </div>
           </div>
 
           <div class="link-section">
@@ -302,8 +313,14 @@
           </div>
         </div>
       </div>
+
+      <div class="copyright">
+        <div>Copyright © 2020. Your company name All rights reserved</div>
+      </div>
     </section>
 
     <!-- Footer Section -->
+
+    <script src="script.js"></script>
   </body>
 </html>
