@@ -296,17 +296,17 @@
 
   /* FASHION SECTION */
   .fashion-section {
-    width: 500px;
+    width: 80vw;
   }
 
   /* WOMEN SECTION */
   .women-section {
-    width: 500px;
+    width: 80vw;
   }
 
   /* STYLE SECTION */
   .style-section {
-    background-color: cyan;
+    /* background-color: cyan; */
     width: 500px;
     margin: 0 auto;
   }
@@ -314,7 +314,7 @@
   .style-section .style-grid {
     column-gap: 29px;
     display: grid;
-    grid-template-columns: 41% 36%;
+    grid-template-columns: 50% 43%;
   }
 
   .style-grid .third {
@@ -324,14 +324,14 @@
     padding-top: 22px;
     padding-left: 25px;
     width: 60%;
-    top: -190px;
-    left: 46%;
+    top: -210px;
+    left: 42%;
   }
 
   .style-grid .style-stacked-btn {
     grid-column: 2;
     position: relative;
-    top: -240px;
+    top: -200px;
     left: 0px;
   }
 
@@ -339,7 +339,221 @@
     font-size: 0.75rem;
     left: 0px;
   }
+
+  /* Footer */
+
+  .footer-section .footer-content {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 100px;
+  }
+
+  .footer-section .section-1 {
+    position: relative;
+    margin-top: 0rem;
+    padding: 10%;
+    width: 100%;
+  }
+
+  .footer-section .section-2 {
+    position: relative;
+    margin-top: 0rem;
+    width: 100%;
+    padding: 10%;
+    /* background-color: blueviolet; */
+  }
+
+  .footer-section .section-2 .button-inside {
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    background-color: white;
+    width: 55vw;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 7%;
+  }
+
+  .footer-section .section-2 input[type="text"] {
+    background-color: transparent;
+    position: relative;
+    margin-left: 10px;
+    top: -3px;
+    border: none;
+    width: 44vw;
+    font-size: 15px;
+  }
 }
 
 @media only screen and (max-width: 600px) {
+  /* BANNER */
+
+  .banner-content {
+    position: relative;
+    top: 40%;
+    left: 5%;
+    width: 70vw;
+  }
+
+  .banner-content .small-text {
+    font-weight: 500;
+    font-size: 1rem;
+    width: fit-content;
+  }
+
+  .banner-content .large-text {
+    font-weight: 700;
+    font-size: 3rem;
+    width: fit-content;
+    text-overflow: ellipsis;
+  }
+
+  .banner-area button {
+    font-weight: 500;
+    font-size: 18px;
+    width: 9.2rem;
+    height: 2.2rem;
+  }
+
+  /* CATAGORY */
+
+  .category .container {
+    width: 280px;
+    background-color: red;
+  }
+
+  .img-grid {
+    display: grid;
+    /* background-color: red; */
+    grid-template-columns: repeat(1, 1fr);
+    column-gap: 25px;
+    row-gap: 22px;
+  }
+
+  .img-grid .card img {
+    max-height: 100%;
+    min-height: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    object-fit: cover;
+  }
+
+  .img-grid .wide-card {
+    /* background-color: blueviolet; */
+    grid-column: span 3;
+    grid-row: span 2;
+  }
+
+  .img-grid .normal-1-card {
+    /* background-color: yellowgreen; */
+    grid-column: span 3;
+    grid-row: span 3;
+  }
+
+  .img-grid .normal-2-card {
+    /* background-color: cyan; */
+    grid-column: span 3;
+    grid-row: span 3;
+  }
+
+  .img-grid .tall-card {
+    /* background-color: blue; */
+    grid-column: span 3;
+    grid-row-start: 1;
+    margin-left: 0px;
+    background-color: var(--primary-color);
+  }
+
+  .stacked-btn button {
+    top: -875px;
+    left: -50px;
+    width: 203px;
+    height: 35px;
+  }
+
+  /* FASHION SECTION */
+  .fashion-section {
+    width: 80vw;
+  }
+
+  /* WOMEN SECTION */
+  .women-section {
+    width: 80vw;
+  }
+
+  /* STYLE SECTION */
+  .style-section {
+    /* background-color: cyan; */
+    width: 500px;
+    margin: 0 auto;
+  }
+
+  .style-section .style-grid {
+    column-gap: 29px;
+    display: grid;
+    grid-template-columns: 50% 43%;
+  }
+
+  .style-grid .third {
+    grid-column: 2;
+    position: relative;
+    background-color: white;
+    padding-top: 22px;
+    padding-left: 25px;
+    width: 60%;
+    top: -210px;
+    left: 42%;
+  }
+
+  .style-grid .style-stacked-btn {
+    grid-column: 2;
+    position: relative;
+    top: -200px;
+    left: 0px;
+  }
+
+  .style-grid button {
+    font-size: 0.75rem;
+    left: 0px;
+  }
+
+  /* Footer */
+
+  .footer-section .footer-content {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 100px;
+  }
+
+  .footer-section .section-1 {
+    position: relative;
+    margin-top: 0rem;
+    padding: 10%;
+    width: 100%;
+  }
+
+  .footer-section .section-2 {
+    position: relative;
+    margin-top: 0rem;
+    width: 100%;
+    padding: 10%;
+    /* background-color: blueviolet; */
+  }
+
+  .footer-section .section-2 .button-inside {
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    background-color: white;
+    width: 55vw;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 7%;
+  }
+
+  .footer-section .section-2 input[type="text"] {
+    background-color: transparent;
+    position: relative;
+    margin-left: 10px;
+    top: -3px;
+    border: none;
+    width: 44vw;
+    font-size: 15px;
+  }
 }
