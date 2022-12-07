@@ -1,23 +1,16 @@
-let menuBtn = document.querySelector(".container");
-// let nav = document.querySelector(".nav-links-ul");
-let nav = document.querySelector(".nav-links-ul");
+let menuBtn = document.querySelector(".menu");
+let navLinks = document.querySelector(".nav-links");
 
 menuBtn.addEventListener("click", () => {
-  if (nav.style.display != "none") {
-    nav.style.display = "none";
+  if (navLinks.style.display == "block") {
+    navLinks.style.display = "none";
   } else {
-    nav.style.display = "block";
+    navLinks.style.display = "block";
   }
 });
 
-$(window).resize(function () {
-  if ($(window).width() > 1092) {
-    nav.style.display = "block";
+window.onresize = function () {
+  if (window.innerWidth > 768) {
+    navLinks.style.display = "block";
   }
-});
-
-// if ($(window).width() > 1092) {
-//   alert("Window width" + $(window).width());
-// }
-
-alert("Hello World");
+};
