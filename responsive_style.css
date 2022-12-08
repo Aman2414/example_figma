@@ -49,23 +49,12 @@
 
   /* WOMEN SECTION */
 
-  .women-section {
-    width: 43rem;
-    margin: 0 auto;
-  }
-
   .women-intro {
     margin-top: 62px;
     margin-bottom: 0px;
   }
 
-  .women-section .card {
-    margin-top: 65px;
-  }
-
   .women-section .cards {
-    justify-content: center;
-    flex-wrap: wrap;
     gap: 0px;
     column-gap: 22px;
   }
@@ -80,32 +69,14 @@
 
   /* FASHION SECTION */
 
-  .fashion-section {
-    width: 43rem;
-  }
-
   .fashion-intro {
     margin-top: 62px;
     margin-bottom: 0px;
   }
 
-  .fashion-section .card {
-    margin-top: 65px;
-  }
-
   .fashion-section .cards {
-    justify-content: center;
-    flex-wrap: wrap;
     gap: 0px;
     column-gap: 22px;
-  }
-
-  .fashion-section .light-text {
-    margin-top: 24px;
-  }
-
-  .fashion-section .bold-text {
-    margin-top: 3px;
   }
 
   /* STYLE SECTION */
@@ -239,7 +210,7 @@
   /* CATAGORY */
 
   .category .container {
-    width: 500px;
+    width: 100%;
     margin: 0 auto;
     margin-top: 124px;
     /* background-color: red; */
@@ -254,10 +225,7 @@
   }
 
   .img-grid .card img {
-    max-height: 100%;
-    min-height: 100%;
-    min-width: 100%;
-    max-width: 100%;
+    width: 100%;
     object-fit: cover;
   }
 
@@ -296,12 +264,12 @@
 
   /* FASHION SECTION */
   .fashion-section {
-    width: 80vw;
+    width: 100%;
   }
 
   /* WOMEN SECTION */
   .women-section {
-    width: 80vw;
+    width: 100%;
   }
 
   /* STYLE SECTION */
